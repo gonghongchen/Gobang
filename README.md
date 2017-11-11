@@ -1,4 +1,4 @@
 # gobang
 五子棋
 
-#### https://gonghongchen.github.io/gobang/
+#### https://gonghongchen.github.io/Gobang/
