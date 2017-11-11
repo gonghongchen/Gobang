@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+body {
+	min-width: 1000px;
+	background-color: #EEEEEE;
+}
+#gobang-box {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 460px;
+	height: 460px;
+	margin-left: -230px;
+	margin-top: -230px;
+	background-color: rgb(218, 182, 152);
+	overflow: hidden;
+}
+#horizontal-lines, #vertical-lines, #horizontal-lines>i, #vertical-lines>i, #black-dots, #black-dots>span, #pieces, #pieces>span {
+	position: absolute;
+	z-index: 1;
+}
+#horizontal-lines, #vertical-lines, #black-dots, #pieces {
+	width: 420px;
+	height: 420px;
+	left: 20px;
+	top: 20px;
+	border: 1px solid;
+}
+#horizontal-lines>i, #vertical-lines>i {
+	display: inline-block;
+	left: 0;
+	top: 0;
+	background-color: #000000;
+}
+#horizontal-lines>i {
+	top: 30px;
+	width: 100%;
+	height: 1px;
+}
+#vertical-lines>i {
+	left: 30px;
+	height: 100%;
+	width: 1px;
+}
+#black-dots>span, #pieces>span {
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	margin-left: -3px;
+	margin-top: -3px;
+	border-radius: 100px;
+	background-color: #000000;
+}
+#pieces>span {
+	left: 0;
+	top: 0;
+	width: 25px;
+	height: 25px;
+	margin-left: -12px;
+	margin-top: -12px;
+}
